@@ -5,6 +5,7 @@ Both pipeline-based and manual model implementations are included to better unde
 
 
 🚀 Tasks Covered
+
 1️⃣ Sentiment Analysis
 Basic sentiment analysis using default HuggingFace pipeline
 Comparison with fine-tuned Twitter sentiment model
