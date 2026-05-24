@@ -1,54 +1,84 @@
-HuggingFace Transformers NLP Project
+# HuggingFace Transformers NLP Project
 
 This project demonstrates multiple Natural Language Processing (NLP) tasks using the HuggingFace Transformers library.
-Both pipeline-based and manual model implementations are included to better understand how transformer models work under the hood.
 
+Both pipeline-based and manual implementations are included to understand how transformer models work under the hood.
 
-🚀 Tasks Covered
+---
 
-1️⃣ Sentiment Analysis
-Basic sentiment analysis using default HuggingFace pipeline
-Comparison with fine-tuned Twitter sentiment model
-Observation of model limitations on informal language
+## Tasks Covered
 
-2️⃣ Text Summarization
-Implementation using sshleifer/distilbart-xsum-12-6
-Handling long text inputs using truncation and chunking
-Understanding context length limitations in transformer models
+### 1. Sentiment Analysis
+- Basic sentiment analysis using HuggingFace pipeline
+- Fine-tuned Twitter sentiment model comparison
+- Analysis of model limitations on informal text
 
+---
 
-3️⃣ Question Answering (QA)
-Manual implementation using roberta-base-squad2
-Context + question → answer extraction
-Span-based answer selection using logits
+### 2. Text Summarization
+- Model: sshleifer/distilbart-xsum-12-6
+- Summarization of long texts
+- Handling context length issues using truncation and chunking
 
-4️⃣ Translation
-English → Spanish translation using Helsinki-NLP OPUS-MT models
-Comparison of pipeline vs manual tokenization approaches
+---
 
-5️⃣ Speech-to-Text (ASR)
-Speech recognition using openai/whisper-tiny
-Audio preprocessing with librosa
-Manual inference without pipeline
+### 3. Question Answering (QA)
+- Model: roberta-base-squad2
+- Context + question based answer extraction
+- Manual implementation using logits (no pipeline)
 
-🧠 Key Learnings
-HuggingFace pipelines simplify NLP tasks but may fail in complex cases
-Manual model usage provides better control and understanding
-Transformer models have context length limitations
-Different models are specialized for different languages and tasks
-Real-world NLP requires preprocessing (chunking, truncation, resampling)
+---
 
-⚙️ Libraries Used
-transformers
-torch
-sentencepiece
-librosa
-sacremoses
-ffmpeg
+### 4. Translation
+- English to Spanish translation using Helsinki-NLP OPUS-MT models
+- Pipeline vs manual tokenizer comparison
 
-📌 Notes
-All models are downloaded from HuggingFace Hub
-No external APIs (e.g., OpenAI API) were used
-Computation was performed locally (Colab / local runtime)
-Pipeline failures were resolved using manual model implementations
+---
 
+### 5. Speech to Text (ASR)
+- Model: openai/whisper-tiny
+- Audio transcription using transformer models
+- Audio preprocessing with librosa
+
+---
+
+## Key Learnings
+
+- Pipelines are useful for quick prototyping but limited in flexibility
+- Manual implementation provides deeper understanding of transformer models
+- Transformer models have strict context length limits
+- Different models are specialized for different NLP tasks
+- Preprocessing (tokenization, truncation, resampling) is critical
+
+---
+
+## Libraries Used
+
+- transformers
+- torch
+- sentencepiece
+- sacremoses
+- librosa
+- ffmpeg
+
+---
+
+## Notes
+
+- All models are loaded from HuggingFace Hub
+- No external APIs were used
+- Computation was done locally or on Google Colab
+- Pipeline issues were resolved using manual model implementations
+
+---
+
+## Project Structure
+
+- transformers_nlp.ipynb
+- README.md
+
+---
+
+## Author
+
+Data Science NLP project using HuggingFace Transformers ecosystem.
